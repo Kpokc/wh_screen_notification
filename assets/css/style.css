@@ -87,3 +87,35 @@ body {
     transform: translate(-10px, 30px) rotateZ(-35deg);
     transition: ease-in-out 0.3s;
 }
+
+/* /////////////// Login Form input fields //////////// */
+form {
+    margin-top: 115px;
+    width: 100%;
+}
+
+input {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    color: #f7f7f7;
+    background: rgb(255 255 255 / 30%);
+    box-shadow: 0 8px 32px 0 rgba(30,40,140,0.4);
+}
+
+input:nth-child(3) {
+    color: #474747;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input:nth-child(3):hover {
+    color: #ffe8b0;
+    background: rgb(255 255 255 / 50%);
+    transition: all 0.3s;
+}
