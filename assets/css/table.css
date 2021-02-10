@@ -25,6 +25,17 @@ section {
     padding-bottom: 50px;
 }
 
+.table-head {
+    line-height: 5px;
+    font-size: 16px;
+}
+
+.table-body {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 35px;
+}
+
 .table-striped {
     color: #f7f7f7;
     width: 90%;
@@ -40,7 +51,6 @@ section {
     border: 1px solid rgba(255,255,255,0.2);
     background-image: linear-gradient(to right top, #009fac,#009fac, #009fac, #006ea6, #1b3c6f);
 }
-
 
 
 .table-striped>tbody>tr:nth-of-type(odd) {
