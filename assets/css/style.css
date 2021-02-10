@@ -32,7 +32,7 @@ body {
     }
 }
 
-/* /////////////// Log in Form //////////// */
+/* /////////////// Log in Form Design ///////// */
 
 .container {
     position: absolute;
@@ -48,3 +48,42 @@ body {
     border: 1px solid rgba(255,255,255,0.2);
 }
 
+/* /////////////// Login Form it self //////////// */
+.login-icon::before, .login-icon::after {
+    position: absolute;
+    content: '';
+    top: -50%;
+    right: 50%;
+    width: 160px;
+    height: 160px;
+    background-image: linear-gradient(to right top, #747474, #6f6f6f, #69696b, #636466, #5d5f62, #575a5e, #525659, #4c5155, #454c4f, #3f4749, #384243, #333d3c);
+    transform: translate(50%, 50%);
+    border-radius: 50%;
+}
+
+.login-icon::after {
+    width: 173px;
+    height: 174px;
+    background-image: linear-gradient(to right top, #eea41a, #efaf19, #efbb1a, #eec61d, #ecd223, #e9ce21, #e5c920, #e2c51e, #dbb115, #d39d0e, #c98a0b, #be780b);
+    z-index: -1;
+    transform: translate(50%, 40%);
+    border: 2px solid rgba(0,0,0,0.5);
+        box-shadow: 0 8px 32px 0 rgb(30 40 140 / 80%);
+}
+
+.login-icon img {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-icon img:nth-child(2){
+    width: 90px;
+    transform: translate(-10px, 30px) rotateZ(-45deg);
+}
+
+.login-icon img:hover ~ img:nth-child(2) {
+    transform: translate(-10px, 30px) rotateZ(-35deg);
+    transition: ease-in-out 0.3s;
+}
