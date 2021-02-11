@@ -23,6 +23,10 @@ body {
 
 /* //////////// Header //////////////// */
 
+.top-menu {
+    margin-top: 15px;
+}
+
 .navbar, .bg-light{
     background: rgba(232,232,232,0.25)!important;
     box-shadow: 0 8px 32px 0 rgba(30,40,140,0.4);
@@ -32,6 +36,11 @@ body {
 }
 .navbar-nav {
     margin: 0 auto;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -69,7 +78,58 @@ section {
     background-image: linear-gradient(to right top, #009fac,#009fac, #009fac, #006ea6, #1b3c6f);
 }
 
-
 .table-striped>tbody>tr:nth-of-type(odd) {
     color: #f7f7f7;
+}
+
+
+@media screen and (max-width:991px) {
+    .top-menu {
+    margin-top: 25px;
+    }
+    .nav-item {
+        text-align: center;
+        width: 100%;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .navbar-toggler {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 1.25rem;
+    }
+
+    .btn-primary{
+        font-size: 1.25rem;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .nav-item {
+        text-align: center;
+        width: 100%;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 2.25rem;
+    }
+
+    .navbar-toggler {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 2.25rem;
+    }
+
+    .btn-primary{
+        font-size: 2.25rem;
+        width: 80%;
+    }
 }
