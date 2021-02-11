@@ -21,7 +21,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">ADD</a>
+                            <!-- Button trigger ADD modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            ADD
+                            </button>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">REMOVE</a>
@@ -213,6 +216,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+
+        
+
+<!-- Modal ADD FORM-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ADD NEW MESSAGE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#" method="POST">
+            <label for="id">Queue ID:</label><br>
+            <input type="text" name="id" id="id"><br>
+            <label for="name">Vendors Name:</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="qty">Qty:</label><br>
+            <input type="text" name="qty" id="qty"><br>
+            
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- \.Modal ADD FORM -->
+
+
 </body>
 
 </html>
